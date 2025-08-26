@@ -42,6 +42,17 @@ namespace Exceptions
          * With in catch blcok we have to write the code to handle the error by displaying
          * user friendly message.
          * with in finally block we have to write error free code execute irrespective of error occurance.
+         * 
+         * Execution flow of try,catch and finally :
+         * While executing try block when there is an error control will
+         * comeout from try block and it will execute oppropriate catch block then
+         * it will execute finally block.
+         * While executing try block if there is no error then it will execute full
+         * try block and it will skip catch block and it will execute finally block.
+         * Catch block will execute only when there is an error ,
+         * but finally block will execute always irrespective of error occurance.
+         * a try block can follow with one catch block or multiple catch blocks. and 
+         * with finally or with out finally.
          */
         static void Main(string[] args)
         {
